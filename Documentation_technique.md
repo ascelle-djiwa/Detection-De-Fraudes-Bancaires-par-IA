@@ -72,7 +72,6 @@ Le modèle expert montre une performance robuste, confirmant que les variables a
     **81 Vrais positifs** : 81 fraudes sur 98 présentes ont été détectées.<br>
 
 
-<br>
 ![Résultat du modèle expert](images/ResultatEvaluationModeleSimplifie.png) <br>
 📊 **B. Modèle Simplifié (02 variables : Heure, Montant)**<br>
 Ce modèle met en lumière les limites d'une analyse basée uniquement sur des données de surface. Les résultats montrent un effondrement de la capacité de détection.<br>
@@ -135,5 +134,6 @@ Suivez ces étapes dans l'ordre pour configurer et lancer le projet sur votre ma
 3.Lancez le Notebook `notebooks/eda.ipynb` pour générer les fichiers `.pkl` dans `models/`.<br>
 4.Exécutez la commande `python scripts/pipeline.py` pour créer le fichier nettoyé dans `data/propre/`.<br>
 5.Lancez l'application avec la commande `streamlit run app.py`.<br>
+
 
 
