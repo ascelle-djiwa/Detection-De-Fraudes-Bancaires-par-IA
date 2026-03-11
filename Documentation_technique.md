@@ -1,7 +1,7 @@
 ## Documentation Technique 📘 : Détection de Fraude Bancaire
 
 
-**Auteur** : Ascelle Laurence DJIWA
+**Auteur** : Ascelle Laurence DJIWA<br>
 **Réalisé au niveau** : M1 MIAGE
 
 
@@ -124,4 +124,5 @@ Suivez ces étapes dans l'ordre pour configurer et lancer le projet sur votre ma
 2.Téléchargez le dataset `creditcard.csv` sur Kaggle (Vous pouvez utiliser le mien dans `archive.zip` mais vous risquez avoir les mêmes résultats que ceux obtenus dans ce projet) puis placez le fichier dans le dossier `data/brut/`.
 3.Lancez le Notebook `notebooks/eda.ipynb` pour générer les fichiers `.pkl` dans `models/`.
 4.Exécutez la commande `python scripts/pipeline.py` pour créer le fichier nettoyé dans `data/propre/`.
+
 5.Lancez l'application avec la commande `streamlit run app.py`.
