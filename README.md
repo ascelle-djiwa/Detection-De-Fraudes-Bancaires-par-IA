@@ -13,9 +13,9 @@ Le projet est divisé en trois composants majeurs respectant les principes de s�
 
 ## Résultats
 * **Modèle Expert** : Rappel de 83% (détection efficace des fraudes complexes).
-  ![Résultats du modèle expert](images/ResultatEvaluationModele.png)
+  ![Résultats du modèle expert](/images/ResultatEvaluationModele.png)
 * **Modèle Simplifié** : Utilisé pour la simulation rapide sur données restreintes.
-![Résultats du modèlesimplifié](images/ResultatEvaluationModeleSimplifie.png)
+![Résultats du modèle simplifié](/images/ResultatEvaluationModeleSimplifie.png)
 ## Installation
 1. Installez les dépendances : `pip install pandas scikit-learn matplotlib seaborn streamlit joblib` ou faites `pip install -r requirements.txt`
 2. Lancez le pipeline : `python pipeline.py`
