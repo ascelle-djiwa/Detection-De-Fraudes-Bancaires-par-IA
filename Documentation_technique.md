@@ -56,9 +56,11 @@ Structure : Architecture multi-pages :<br>
     Solution : Forçage de la liste des colonnes dans pipeline.py.<br>
 
 # Analyse des Résultats
-L'évaluation des modèles ne s'est pas limitée à l'**exactitude (Accuracy)**, qui est trompeuse sur des données déséquilibrées. Nous avons privilégié le **Rappel (Recall)** pour mesurer la capacité à détecter les fraudes, et la **Précision** pour limiter l'impact sur les clients honnêtes.
+L'évaluation des modèles ne s'est pas limitée à l'**exactitude (Accuracy)**, qui est trompeuse sur des données déséquilibrées. Nous avons privilégié le **Rappel (Recall)** pour mesurer la capacité à détecter les fraudes, et la **Précision** pour limiter l'impact sur les clients honnêtes.<br>
 
-![Résultat du modèle expert](images/ResultatEvaluationModele.png)
+![Résultat du modèle expert](images/ResultatEvaluationModele.png) <br>
+
+
 📊 **A. Modèle Expert (30 variables)**<br>
 Le modèle expert montre une performance robuste, confirmant que les variables anonymisées (**V1** à **V28**) contiennent des signatures de fraude essentielles.<br>
 **Rappel (0.83)** : Le modèle parvient à intercepter 81 fraudes sur les 98 présentes dans l'échantillon de test.<br>
@@ -69,7 +71,9 @@ Le modèle expert montre une performance robuste, confirmant que les variables a
     **17 Faux Négatifs** : 17 fraudes ont réussi à passer à travers le filtre.<br>
     **81 Vrais positifs** : 81 fraudes sur 98 présentes ont été détectées.<br>
 
-![Résultat du modèle expert](images/ResultatEvaluationModeleSimplifie.png)
+
+<br>
+![Résultat du modèle expert](images/ResultatEvaluationModeleSimplifie.png) <br>
 📊 **B. Modèle Simplifié (02 variables : Heure, Montant)**<br>
 Ce modèle met en lumière les limites d'une analyse basée uniquement sur des données de surface. Les résultats montrent un effondrement de la capacité de détection.<br>
 **Rappel (0.04)** : Le modèle ne détecte que 4 fraudes sur 98. C'est un échec opérationnel car 96% des fraudes sont acceptées.<br>
@@ -131,4 +135,5 @@ Suivez ces étapes dans l'ordre pour configurer et lancer le projet sur votre ma
 3.Lancez le Notebook `notebooks/eda.ipynb` pour générer les fichiers `.pkl` dans `models/`.<br>
 4.Exécutez la commande `python scripts/pipeline.py` pour créer le fichier nettoyé dans `data/propre/`.<br>
 5.Lancez l'application avec la commande `streamlit run app.py`.<br>
+
 
