@@ -130,10 +130,12 @@ Afin de respecter les standards du Software Engineering, le projet est structur�
 Suivez ces étapes dans l'ordre pour configurer et lancer le projet sur votre machine.<br>
 
 1.Installez les bibliothèques avec `pip install -r requirements.txt` ou `pip install pandas scikit-learn streamlit joblib matplotlib seaborn`.<br>
-2.Téléchargez le dataset `creditcard.csv` sur Kaggle (Vous pouvez utiliser le mien dans `archive.zip` mais vous risquez avoir les mêmes résultats que ceux obtenus dans ce projet) puis placez le fichier dans le dossier `data/brut/`.<br>
+2.Téléchargez le dataset `creditcard.csv` sur Kaggle à l'adresse `https://www.kaggle.com/datasets/iabhishekofficial/creditcard-fraud-detection` puis placez le fichier dans le dossier `data/brut/`.<br>
+(Vous pouvez utiliser le mien dans `archive.zip` mais vous risquez avoir les mêmes résultats que ceux obtenus dans ce projet)<br>
 3.Lancez le Notebook `notebooks/eda.ipynb` pour générer les fichiers `.pkl` dans `models/`.<br>
 4.Exécutez la commande `python scripts/pipeline.py` pour créer le fichier nettoyé dans `data/propre/`.<br>
 5.Lancez l'application avec la commande `streamlit run app.py`.<br>
+
 
 
 
