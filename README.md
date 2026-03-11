@@ -21,4 +21,8 @@ Le projet est divisé en trois composants majeurs respectant les principes de s�
 2. Lancez le pipeline : `python pipeline.py`
 3. Lancez l'application : `streamlit run app.py`
 
+##Limites actuelles
+**Limites du modèle simplifié** : La fraude bancaire est multidimensionnelle. L'absence des variables "comportementales" ($V1$ à $V28$) rend le modèle aveugle aux schémas complexes. Donc l'**Heure** et le **Montant** seuls sont insuffisants pour caractériser une fraude.
+**Déséquilibre des classes (Data Imbalance)** : Les données utilisées contiennent seulement 0,17% de fraudes.
+**Dérive du modèle (Model Drift)** : Le modèle actuel n'est entraîné que pour contrer une certaine tactique de fraude. Il peut devenir obsolète et devra être re-adapté lorsque les tactiques de fraudes évolueront.
 **Plus d'informations dans Documentation_Technique.md**
